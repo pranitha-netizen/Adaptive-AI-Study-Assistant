@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BloomLearn — Adaptive AI Study Assistant</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="authScreen" class="auth-wrap">
+ <div class="auth-art"><div class="brand"><span class="brand-mark">✦</span> BloomLearn</div><div class="art-copy"><span class="eyebrow">YOUR LEARNING, IN BLOOM</span><h1>Small steps.<br><em>Big progress.</em></h1><p>A study space that adapts to you — one question at a time.</p><div class="floating-note">🌱 Your next breakthrough starts here</div></div><div class="art-footer">Made for curious minds · Learn at your own pace</div></div>
+ <div class="auth-panel"><div class="auth-box"><div class="mobile-brand brand"><span class="brand-mark">✦</span> BloomLearn</div><div class="auth-tabs"><button class="auth-tab active" data-auth="login">Log in</button><button class="auth-tab" data-auth="register">Create account</button></div>
+ <section id="loginForm"><span class="eyebrow">WELCOME BACK</span><h2>Ready to grow?</h2><p class="muted">Pick up where your curiosity left off.</p><form id="loginFormEl"><label>Email address</label><input class="form-control" type="email" id="loginEmail" required placeholder="you@example.com"><label>Password</label><input class="form-control" type="password" id="loginPassword" required placeholder="At least 6 characters"><button class="btn btn-primary w-100 mt-3">Let’s learn <span>→</span></button></form><div class="demo-hint">✨ Try demo: <b>demo@study.ai</b> / <b>Study123!</b></div></section>
+ <section id="registerForm" class="d-none"><span class="eyebrow">A FRESH START</span><h2>Create your space</h2><p class="muted">Your personal learning journey begins here.</p><form id="registerFormEl"><label>Full name</label><input class="form-control" id="regName" required placeholder="Your name"><label>Email address</label><input class="form-control" type="email" id="regEmail" required placeholder="you@example.com"><label>Password</label><input class="form-control" type="password" id="regPassword" minlength="6" required placeholder="At least 6 characters"><div class="row"><div class="col-7"><label>Department</label><input class="form-control" id="regDepartment" placeholder="Computer Science"></div><div class="col-5"><label>Semester</label><select class="form-select" id="regSemester"><option value="2">2</option><option value="1">1</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option></select></div></div><label>Learning preference</label><select class="form-select" id="regPreference"><option>Visual</option><option>Reading</option><option>Practice</option><option>Mixed</option></select><button class="btn btn-primary w-100 mt-3">Create my account →</button></form></section><div id="authMessage" class="message"></div></div></div>
+</div>
+<div id="appScreen" class="app-shell d-none">
+ <aside class="sidebar"><a class="brand" href="#dashboard"><span class="brand-mark">✦</span> BloomLearn</a><div class="side-label">YOUR SPACE</div><nav><a href="#dashboard" data-view="dashboard" class="nav-link active"><span>⌂</span> Overview</a><a href="#subjects" data-view="subjects" class="nav-link"><span>▤</span> Explore subjects</a><a href="#recommendations" data-view="recommendations" class="nav-link"><span>✧</span> For you</a><a href="#progress" data-view="progress" class="nav-link"><span>↗</span> My progress</a><a href="#profile" data-view="profile" class="nav-link"><span>☺</span> My profile</a></nav><div class="sidebar-bottom"><div class="side-quote">“Every expert was once a beginner.”<span>Keep showing up 🌷</span></div><button id="logoutBtn" class="logout">↪ &nbsp; Log out</button></div></aside>
+ <main class="main-area"><header class="topbar"><div><span class="mobile-greeting">YOUR LEARNING SPACE</span><h6 id="pageKicker">YOUR LEARNING SPACE</h6></div><div class="top-user"><div class="top-avatar" id="topAvatar">S</div><div><b id="topName">Student</b><small>Curious learner ✨</small></div></div></header><div class="content-area" id="viewRoot"></div><footer>BloomLearn <span>·</span> Grow at your own pace 🌱</footer></main>
+</div>
+<div class="toast-container position-fixed top-0 end-0 p-3" id="toastArea"></div>
+<script src="js/app.js"></script>
+</body></html>

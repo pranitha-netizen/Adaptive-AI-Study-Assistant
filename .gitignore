@@ -1,0 +1,17 @@
+target/
+*.class
+*.log
+backend/data/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+application-local.properties
+*.db
+*.mv.db
+*.trace.db
