@@ -1,4 +1,4 @@
-const API = localStorage.getItem('bloom_api_url') || 'http://localhost:8080/api';
+const API = localStorage.getItem('bloom_api_url') || 'https://adaptive-ai-study-assistant.onrender.com/api';
 const $ = (s) => document.querySelector(s);
 const $$ = (s) => [...document.querySelectorAll(s)];
 let student = JSON.parse(localStorage.getItem('bloom_student') || 'null');
